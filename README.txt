@@ -1,0 +1,1 @@
+Various solutions to Project Euler problems. This code has an MIT style license. 
