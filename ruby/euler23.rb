@@ -28,7 +28,7 @@ def is_abundant num
   if factors_sum(num) > num
     return true
   else
-      return false
+    return false
   end
 end
 
@@ -38,9 +38,9 @@ def sum_of_abundants num
   if num < 24
     return false
   end
-  for i in (1..num / 2)
-    if is_abundant(i) && 
-      is_abundant(num-i)
+  halfsies = num / 2
+  for i in (1..halfsies)
+    if is_abundant(i) && is_abundant(num-i)
       return true
     end
   end
